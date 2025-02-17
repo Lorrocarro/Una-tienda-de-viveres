@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Víveres</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/quagga@0.12.1/dist/quagga.min.js"></script>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.png" alt="Logo Tienda de Víveres" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#granos">Granos</a></li>
+          <li><a href="#verduras">Verduras</a></li>
+          <li><a href="#carrito">Carrito</a></li>
+          <li><a href="#venta">Venta en tienda</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección de granos -->
+    <section id="granos">
+      <h2>Granos</h2>
+      <div class="product-grid">
+        <!-- Aquí van los productos de granos -->
+        <div class="product">
+          <img src="grano1.jpg" alt="Arroz" />
+          <h3>Arroz</h3>
+          <p>$1.50</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="product">
+          <img src="grano2.jpg" alt="Frijoles" />
+          <h3>Frijoles</h3>
+          <p>$2.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <!-- Más productos -->
+      </div>
+    </section>
+
+    <!-- Sección de verduras -->
+    <section id="verduras">
+      <h2>Verduras</h2>
+      <div class="product-grid">
+        <!-- Aquí van los productos de verduras -->
+        <div class="product">
+          <img src="verdura1.jpg" alt="Tomates" />
+          <h3>Tomates</h3>
+          <p>$0.80</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="product">
+          <img src="verdura2.jpg" alt="Lechuga" />
+          <h3>Lechuga</h3>
+          <p>$1.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <!-- Más productos -->
+      </div>
+    </section>
+
+    <!-- Sección de Carrito de Compras -->
+    <section id="carrito">
+      <h2>Carrito de Compras</h2>
+      <div class="carrito-contenido">
+        <!-- Aquí se llenarán los productos agregados -->
+        <p>Carrito vacío</p>
+      </div>
+      <button class="finalizar-compra">Finalizar compra</button>
+    </section>
+
+    <!-- Sección de productos en venta -->
+    <section id="venta">
+      <h2>Productos en Venta</h2>
+      <div class="product-grid">
+        <!-- Aquí van los productos más destacados -->
+        <div class="product">
+          <img src="producto1.jpg" alt="Producto destacado" />
+          <h3>Producto 1</h3>
+          <p>$5.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <!-- Más productos -->
+      </div>
+    </section>
+
+    <!-- Lector de código de barras (esqueleto, se necesita JS para funcionar) -->
+    <!-- Lector de código de barras -->
+    <!-- Sección del Lector de Código de Barras -->
+    <section id="lector">
+      <h2>Lector de Código de Barras</h2>
+      <label for="barcodeScanner"
+        >Selecciona una imagen con el código de barras:</label
+      >
+      <input type="file" id="barcodeScanner" accept="image/*" />
+      <br />
+      <button id="leerCodigo">Leer Código</button>
+      <div id="resultado"></div>
+      <!-- Área para mostrar el resultado del escaneo -->
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Tienda de Víveres. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <!-- Si usas JS para el lector de código de barras -->
+  </body>
+</html>
